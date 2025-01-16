@@ -1,0 +1,26 @@
+
+.wh-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+.gap-40px{
+    gap:2.5rem
+}
+
+.transX-2{
+    transform: translate(-2%);
+}
+
+.padding{
+    padding-top: 180px;
+    @media (width <= 600px) {
+        padding-top: 60px;
+    }
+}
+
+.background{
+    background-color: red;
+}

@@ -1,0 +1,54 @@
+
+
+.notify{
+    width: 30%;
+    height: 50px;
+    border-radius: 20px;
+    position: fixed;
+    top:30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: top 0.75s ease-out;
+    background-color: blue;
+    z-index: 100;
+    padding: 30px;
+    position: fixed;
+    top:120px;
+    right: -100%;
+    transition: right 5s ease-out;
+}
+
+.notify--open{
+    right: 0;
+}
+
+.notify--p{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notify--button{
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.notify--button:active{
+    scale: 0.8;
+}
+
+
+.notify--show{
+    top:0;
+}

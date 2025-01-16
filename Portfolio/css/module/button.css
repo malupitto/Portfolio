@@ -1,0 +1,91 @@
+
+.button{
+    --button-width:50px;
+    --button-hieght:50px;
+    --button-bg:#f7f7f7;
+    --button-color:#5E9ADD;
+    --icon-bg:var(--accent-color);
+    --icon-color:var(--secondary-color);
+
+    width:var(--button-width);
+    height: var(--button-hieght);
+    border-radius: 100dvw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: width 500ms ease-out;
+    display: inline-block;
+    overflow: hidden;
+    background-color:var(--button-bg);
+    color: var(--button-color);
+    position: relative;
+    @media (width <= 600px) {
+        --button-width:60px;
+        --button-hieght:40px;
+    }
+}
+
+.button > span, .button > a{
+    color: var(--button-color);
+}
+
+.button--icon{
+    width: var(--button-width);
+    height:var(--button-hieght);
+    display: inline-block;
+    border-radius: 100dvh;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: var(--button-hieght);
+    background-color: var(--icon-bg);
+}
+
+
+.button--icon i,.button i,.button--menu{
+    line-height: var(--button-hieght);
+    color: var(--icon-color,--button-color);
+    
+}
+
+.button--menu{
+    --icon-color:var(--accent-color)
+}
+
+@media (width <=600px) {
+    .button:active{
+        scale: 0.8;
+    } 
+}
+
+.button:hover{
+    width: 170px; 
+}
+
+.button--full-width{
+    width: 170px;
+
+    @media (width <= 600px) {
+       width: var(--button-width);
+    }
+}
+
+.button__center-element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_facebook-color{
+    --icon-bg:#1877F2;
+    --icon-color:#f7f7f7;
+    --button-bg:#f7f7f7;
+    --button-color:#1877F2;
+}
+
+.button_github-color{
+    --icon-bg:#2b3137;
+    --icon-color:#fafbfc;
+    --button-bg:#fafbfc;
+    --button-color:#2b3137;
+}

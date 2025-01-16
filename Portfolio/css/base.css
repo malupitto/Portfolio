@@ -1,0 +1,72 @@
+/*this is font Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --fb-color:#1877F2;
+    --github-color:black;
+    --color-white: #f7f7f7;
+    --primary-color:#040B19;
+    --secondary-color:#f7f7f7;
+    --accent-color:#5E9ADD;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", serif;
+    color: white;    
+}
+
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    @media (width <= 600px) {
+       width: 100dvw;
+       
+    }
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+button{
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+p,span,li{
+    height: fit-content;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+     background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem;
+}
+

@@ -1,0 +1,30 @@
+.font--display{
+    font-size: clamp(2rem, 0.5rem + 4vw, 3.5rem);
+    font-weight: 900;
+}
+
+.font--heading{
+    font-size: clamp(1.5rem, 1rem + 1.3333vw, 2rem);
+    font-weight: 700;
+}
+
+.font--label{
+    font-size: clamp(1rem, 0.5rem + 1.3333vw, 1.5rem);
+    font-weight: 500;
+    
+}
+
+.font--paragraph{
+    font-size: clamp(0.8125rem, 0.625rem + 0.5vw, 1rem);
+    font-weight: 400;
+}
+
+.font--borderOnly{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+}
+
+.font--line-height{
+    line-height: 65px;
+}

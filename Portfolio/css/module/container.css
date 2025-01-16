@@ -1,0 +1,243 @@
+
+.sidebar{
+    display: none;
+}
+
+@media (width <= 600px) {
+    .sidebar{
+        width: 50%;
+        height: calc(100dvh - 100px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        background-color:var(--color-white);
+        color: red;
+        padding: 20px;
+        position: fixed;
+        top: 100px;
+        left:-100%;
+        z-index: 50;
+        transition: left 750ms ease-out;
+         
+    }
+
+    .sidebar a{
+        color: red;
+    }
+    .sidebar--open{
+        left: 0;
+    }
+    
+}
+
+.contact-form{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    
+}
+
+.contact--heading{
+    align-self: flex-start;
+    margin-left: 24px;
+    margin-top: 32px;
+}
+
+.contact--detail,.contact--input{
+    
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.contact--detail{
+    width: 100%;
+    gap: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    
+   
+}
+
+.contact--input{
+    width: 100%;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact--label{
+    align-self: flex-start;
+    margin-left: 10%;
+}
+
+.contact--btn{
+    margin-left: 10%;
+}
+
+.contact--type{
+    width: 85%;
+    outline: none;
+    border: 5px solid blue;
+    background-color: transparent;
+    height: 40px;
+    border-radius: 100dvh;
+    padding-left: 24px;
+}
+
+.contact--type:focus,.contact--messege:focus{
+    border: 5px solid lime;
+}
+
+
+.contact--messege{
+    width: 85%;
+    min-height: 250px;
+    border: 5px solid blue;
+    background-color: transparent;
+    border-radius: 10px;
+    padding-left: 24px;
+    padding-top: 16px;
+    resize: none;
+    outline: none;
+}
+
+.education{
+    width: 100%;
+    min-height: 90dvh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    @media (width <= 600px) {
+        gap: 16px;
+        justify-content: flex-start;
+        height: fit-content;
+        min-height:0px;
+    }
+    
+    
+}
+
+@media (width <= 600px) {
+    .flex--collum{
+        flex-direction: column;
+        
+        height: fit-content;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .education--list-detail{
+        height: 100%;
+        justify-content: flex-start;
+    }
+}
+
+.education--label{
+    width: 20%;
+    height: 80px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2dvh;
+
+    @media (width <= 600px) {
+        display: none;
+    }
+}
+
+.education--line{
+    width:5px;
+    height: 85%;
+    border-radius: 100dvw;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    z-index: -1;
+
+    @media (width <= 600px) {
+        display: none;
+    }
+}
+
+.education--item{
+    width: 65%;
+    height: fit-content;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row-reverse;
+    gap: 40px;
+    text-align: right;
+    padding: 15px;
+    transform: translateX(-50%);
+    position: relative;
+
+    @media (width <= 600px) {
+        width: 100%;
+       
+        transform: translateX(0%);
+        flex-flow: nowrap;
+        text-align: left;
+        gap: 16px;
+        justify-content: flex-start;
+    }
+    
+}
+
+.education--item img{
+   width: 20%;
+   background-color: white;
+   border-radius: 100dvh;
+   cursor: pointer;
+   position: absolute;
+   right: -37%;
+   font-size: 10px;
+
+    @media (width <= 600px) {
+        width: 10%;
+        position: static;
+        transform: translateX(0);
+    }
+}
+
+.education--detail span{
+    display: block;
+}
+
+.education--item__align-left{
+    text-align: left;
+    transform: translateX(105%);
+}
+
+.education--item__align-left img{
+    left: -37%;
+}
+
+@media (width <= 600px) {
+    .education--item__align-left{
+        text-align: left;
+        transform: translateX(0%);
+    }
+
+    .education--item__align-left img{
+        left: 0;
+    }
+}
+
+
+
